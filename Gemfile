@@ -45,3 +45,5 @@ gem 'therubyracer'
 
 gem "unicode", :platforms => [:mri_18, :mri_19]
 gem "bootstrap-sass"
+
+gem "sunspot_rails"
