@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131107051107) do
+ActiveRecord::Schema.define(:version => 20131107215032) do
 
   create_table "bookmarks", :force => true do |t|
     t.integer  "user_id",     :null => false
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20131107051107) do
     t.text     "description"
     t.string   "title"
     t.string   "topic"
-    t.string   "type"
+    t.string   "prod_type"
     t.text     "url"
     t.text     "image"
     t.text     "desc_html"
