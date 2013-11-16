@@ -1,0 +1,406 @@
+INFO  - 2013-11-16 19:05:54.313; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2013-11-16 19:05:54.346; org.apache.solr.core.SolrResourceLoader; No /solr/home in JNDI
+INFO  - 2013-11-16 19:05:54.346; org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /opt/solr/
+INFO  - 2013-11-16 19:05:54.375; org.apache.solr.core.CoreContainer$Initializer; looking for solr config file: /opt/solr/solr.xml
+INFO  - 2013-11-16 19:05:54.380; org.apache.solr.core.CoreContainer; New CoreContainer 27378735
+INFO  - 2013-11-16 19:05:54.382; org.apache.solr.core.CoreContainer; Loading CoreContainer using Solr Home: '/opt/solr/'
+INFO  - 2013-11-16 19:05:54.383; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/opt/solr/'
+INFO  - 2013-11-16 19:05:54.901; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2013-11-16 19:05:54.902; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: http://
+INFO  - 2013-11-16 19:05:54.902; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2013-11-16 19:05:54.902; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2013-11-16 19:05:54.903; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2013-11-16 19:05:54.903; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2013-11-16 19:05:54.903; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2013-11-16 19:05:54.903; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2013-11-16 19:05:54.904; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2013-11-16 19:05:54.924; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2013-11-16 19:05:55.215; org.apache.solr.core.CoreContainer; Registering Log Listener
+INFO  - 2013-11-16 19:05:55.247; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: /opt/solr/collection1
+INFO  - 2013-11-16 19:05:55.247; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/opt/solr/collection1/'
+INFO  - 2013-11-16 19:05:55.253; org.apache.solr.core.CoreContainer; Creating SolrCore 'blacklight-core' using instanceDir: /opt/solr/blacklight-core
+INFO  - 2013-11-16 19:05:55.254; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/opt/solr/blacklight-core/'
+INFO  - 2013-11-16 19:05:55.254; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-langid-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.254; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-clustering-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.255; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-velocity-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.255; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-analysis-extras-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.362; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2013-11-16 19:05:55.363; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/extraction/lib (resolved as: /opt/solr/collection1/../../../contrib/extraction/lib).
+WARN  - 2013-11-16 19:05:55.363; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /opt/solr/collection1/../../../dist).
+WARN  - 2013-11-16 19:05:55.364; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/clustering/lib/ (resolved as: /opt/solr/collection1/../../../contrib/clustering/lib).
+WARN  - 2013-11-16 19:05:55.364; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /opt/solr/collection1/../../../dist).
+WARN  - 2013-11-16 19:05:55.364; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/langid/lib/ (resolved as: /opt/solr/collection1/../../../contrib/langid/lib).
+WARN  - 2013-11-16 19:05:55.364; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /opt/solr/collection1/../../../dist).
+WARN  - 2013-11-16 19:05:55.365; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../contrib/velocity/lib (resolved as: /opt/solr/collection1/../../../contrib/velocity/lib).
+INFO  - 2013-11-16 19:05:55.366; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2013-11-16 19:05:55.367; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-langid-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.368; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-clustering-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.368; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-velocity-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.368; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/lib/solr-analysis-extras-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.369; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/jempbox-1.7.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.369; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.369; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/fontbox-1.7.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.370; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/tika-core-1.3.jar' to classloader
+INFO  - 2013-11-16 19:05:55.370; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/poi-scratchpad-3.8.jar' to classloader
+INFO  - 2013-11-16 19:05:55.370; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2013-11-16 19:05:55.370; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2013-11-16 19:05:55.370; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - 2013-11-16 19:05:55.371; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2013-11-16 19:05:55.371; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.371; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.371; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2013-11-16 19:05:55.372; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.372; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.372; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/poi-3.8.jar' to classloader
+INFO  - 2013-11-16 19:05:55.372; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.372; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.373; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/poi-ooxml-3.8.jar' to classloader
+WARN  - 2013-11-16 19:05:55.375; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../dist/ (resolved as: /opt/solr/collection1/../../../dist).
+WARN  - 2013-11-16 19:05:55.376; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: /non/existent/dir/yields/warning (resolved as: /non/existent/dir/yields/warning).
+INFO  - 2013-11-16 19:05:55.383; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/tika-parsers-1.3.jar' to classloader
+INFO  - 2013-11-16 19:05:55.384; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.384; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.384; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/poi-ooxml-schemas-3.8.jar' to classloader
+INFO  - 2013-11-16 19:05:55.384; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/pdfbox-1.7.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.384; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.385; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2013-11-16 19:05:55.385; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2013-11-16 19:05:55.386; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2013-11-16 19:05:55.386; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.393; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.397; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/simple-xml-2.6.4.jar' to classloader
+INFO  - 2013-11-16 19:05:55.397; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+INFO  - 2013-11-16 19:05:55.397; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2013-11-16 19:05:55.398; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/carrot2-mini-3.6.2.jar' to classloader
+INFO  - 2013-11-16 19:05:55.398; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/hppc-0.4.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.398; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+INFO  - 2013-11-16 19:05:55.398; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.398; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/clustering/lib/attributes-binder-1.0.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.399; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.399; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.399; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2013-11-16 19:05:55.399; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.400; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lib/morfologik-stemming-1.5.5.jar' to classloader
+INFO  - 2013-11-16 19:05:55.400; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lib/morfologik-polish-1.5.5.jar' to classloader
+INFO  - 2013-11-16 19:05:55.400; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lib/icu4j-49.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.400; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lib/morfologik-fsa-1.5.5.jar' to classloader
+INFO  - 2013-11-16 19:05:55.413; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lucene-libs/lucene-analyzers-smartcn-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.413; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lucene-libs/lucene-analyzers-stempel-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.414; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lucene-libs/lucene-analyzers-icu-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.414; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/analysis-extras/lucene-libs/lucene-analyzers-morfologik-4.3.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.414; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2013-11-16 19:05:55.414; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.415; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2013-11-16 19:05:55.415; org.apache.solr.core.SolrResourceLoader; Adding 'file:/opt/solr/blacklight-core/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2013-11-16 19:05:55.455; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - 2013-11-16 19:05:55.594; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-11-16 19:05:55.632; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-11-16 19:05:55.699; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+INFO  - 2013-11-16 19:05:55.977; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_43
+INFO  - 2013-11-16 19:05:56.158; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2013-11-16 19:05:56.167; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2013-11-16 19:05:56.178; org.apache.solr.schema.IndexSchema; [blacklight-core] Schema name=Blacklight Demo Index
+INFO  - 2013-11-16 19:05:56.573; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2013-11-16 19:05:56.574; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2013-11-16 19:05:56.575; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2013-11-16 19:05:56.876; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2013-11-16 19:05:56.896; org.apache.solr.core.SolrCore; [blacklight-core] Opening new SolrCore at /opt/solr/blacklight-core/, dataDir=/opt/solr/blacklight-core/data/
+INFO  - 2013-11-16 19:05:56.897; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@b61fd1
+INFO  - 2013-11-16 19:05:56.980; org.apache.solr.core.SolrCore; [blacklight-core] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-11-16 19:05:56.981; org.apache.solr.core.SolrCore; [blacklight-core] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-11-16 19:05:56.992; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2013-11-16 19:05:57.022; org.apache.solr.core.CachingDirectoryFactory; return new directory for /opt/solr/blacklight-core/data
+INFO  - 2013-11-16 19:05:57.022; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/opt/solr/blacklight-core/data/index/
+INFO  - 2013-11-16 19:05:57.022; org.apache.solr.core.CachingDirectoryFactory; return new directory for /opt/solr/blacklight-core/data/index
+INFO  - 2013-11-16 19:05:57.048; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-11-16 19:05:57.074; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-11-16 19:05:57.078; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2013-11-16 19:05:57.082; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-11-16 19:05:57.082; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-11-16 19:05:57.157; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2013-11-16 19:05:57.168; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2013-11-16 19:05:57.359; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-11-16 19:05:57.367; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at /opt/solr/collection1/, dataDir=/opt/solr/collection1/data/
+INFO  - 2013-11-16 19:05:57.368; org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@b61fd1
+INFO  - 2013-11-16 19:05:57.375; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2013-11-16 19:05:57.376; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2013-11-16 19:05:57.379; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2013-11-16 19:05:57.385; org.apache.solr.core.CachingDirectoryFactory; return new directory for /opt/solr/collection1/data
+INFO  - 2013-11-16 19:05:57.386; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/opt/solr/collection1/data/index/
+INFO  - 2013-11-16 19:05:57.386; org.apache.solr.core.CachingDirectoryFactory; return new directory for /opt/solr/collection1/data/index
+INFO  - 2013-11-16 19:05:57.389; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2013-11-16 19:05:57.389; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2013-11-16 19:05:57.390; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2013-11-16 19:05:57.390; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2013-11-16 19:05:57.390; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2013-11-16 19:05:57.404; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.405; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.406; org.apache.solr.core.RequestHandlers; created search: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.411; org.apache.solr.core.RequestHandlers; created document: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.412; org.apache.solr.core.RequestHandlers; created advanced: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.421; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2013-11-16 19:05:57.422; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.424; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.425; org.apache.solr.core.RequestHandlers; created /update: solr.XmlUpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.429; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.432; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-11-16 19:05:57.432; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-11-16 19:05:57.434; org.apache.solr.core.RequestHandlers; created /update/javabin: solr.BinaryUpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.434; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.CSVRequestHandler
+INFO  - 2013-11-16 19:05:57.434; org.apache.solr.core.RequestHandlers; created /update/csv: solr.CSVRequestHandler
+INFO  - 2013-11-16 19:05:57.434; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.JsonUpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.436; org.apache.solr.core.RequestHandlers; created /update/json: solr.JsonUpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.436; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-11-16 19:05:57.436; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-11-16 19:05:57.437; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.438; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.438; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.439; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.442; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-11-16 19:05:57.445; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2013-11-16 19:05:57.445; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.446; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.447; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.447; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2013-11-16 19:05:57.448; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2013-11-16 19:05:57.448; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-11-16 19:05:57.451; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2013-11-16 19:05:57.451; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-11-16 19:05:57.451; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.452; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.452; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.452; org.apache.solr.core.RequestHandlers; created tvrh: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.452; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.453; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.453; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.453; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.459; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2013-11-16 19:05:57.482; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2013-11-16 19:05:57.482; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.482; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.482; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.483; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.483; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.483; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.483; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.484; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2013-11-16 19:05:57.496; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-11-16 19:05:57.497; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-11-16 19:05:57.499; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-11-16 19:05:57.500; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+WARN  - 2013-11-16 19:05:57.501; org.apache.solr.handler.XmlUpdateRequestHandler; Using deprecated class: XmlUpdateRequestHandler -- replace with UpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.501; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+WARN  - 2013-11-16 19:05:57.502; org.apache.solr.handler.BinaryUpdateRequestHandler; Using deprecated class: BinaryUpdateRequestHandler -- replace with UpdateRequestHandler
+INFO  - 2013-11-16 19:05:57.542; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@126fef6 main
+INFO  - 2013-11-16 19:05:57.685; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2013-11-16 19:05:57.686; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-11-16 19:05:57.692; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-11-16 19:05:57.709; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2013-11-16 19:05:57.733; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-11-16 19:05:57.736; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /opt/solr/collection1/conf/elevate.xml
+INFO  - 2013-11-16 19:05:57.737; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@a0c73f main
+INFO  - 2013-11-16 19:05:57.738; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2013-11-16 19:05:57.738; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2013-11-16 19:05:57.738; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2013-11-16 19:05:57.749; org.apache.solr.handler.component.SpellCheckComponent; Registering newSearcher listener for spellchecker: default
+INFO  - 2013-11-16 19:05:57.768; org.apache.solr.handler.component.SpellCheckComponent; Registering newSearcher listener for spellchecker: author
+INFO  - 2013-11-16 19:05:57.774; org.apache.solr.handler.component.SpellCheckComponent; Registering newSearcher listener for spellchecker: subject
+INFO  - 2013-11-16 19:05:57.791; org.apache.solr.handler.component.SpellCheckComponent; Registering newSearcher listener for spellchecker: title
+INFO  - 2013-11-16 19:05:57.791; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2013-11-16 19:05:57.792; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /opt/solr/blacklight-core/conf/elevate.xml
+INFO  - 2013-11-16 19:05:57.834; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2013-11-16 19:05:57.837; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@a0c73f main{StandardDirectoryReader(segments_3:5 _0(4.3.1):C30 _1(4.3.1):C1)}
+INFO  - 2013-11-16 19:05:57.841; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@126fef6 main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-11-16 19:05:57.863; org.apache.solr.core.CoreContainer; registering core: blacklight-core
+INFO  - 2013-11-16 19:05:57.920; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=78 
+INFO  - 2013-11-16 19:05:57.923; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-11-16 19:05:57.924; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-11-16 19:05:57.924; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2013-11-16 19:05:57.925; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@126fef6 main{StandardDirectoryReader(segments_1:1)}
+INFO  - 2013-11-16 19:05:57.931; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2013-11-16 19:05:57.935; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/opt/solr/blacklight-core
+INFO  - 2013-11-16 19:05:57.935; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2013-11-16 19:05:58.236; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=lc_1letter_facet,memSize=4953,tindexSize=76,time=5,phase1=5,nTerms=9,bigTerms=4,termInstances=8,uses=0}
+INFO  - 2013-11-16 19:05:58.246; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=lc_alpha_facet,memSize=4548,tindexSize=42,time=1,phase1=1,nTerms=14,bigTerms=1,termInstances=20,uses=0}
+INFO  - 2013-11-16 19:05:58.254; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=lc_b4cutter_facet,memSize=4464,tindexSize=52,time=7,phase1=7,nTerms=27,bigTerms=0,termInstances=28,uses=0}
+INFO  - 2013-11-16 19:05:58.257; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=language_facet,memSize=4557,tindexSize=46,time=0,phase1=0,nTerms=12,bigTerms=1,termInstances=25,uses=0}
+INFO  - 2013-11-16 19:05:58.259; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=pub_date,memSize=4552,tindexSize=44,time=1,phase1=1,nTerms=22,bigTerms=1,termInstances=26,uses=0}
+INFO  - 2013-11-16 19:05:58.259; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=subject_era_facet,memSize=4457,tindexSize=45,time=0,phase1=0,nTerms=6,bigTerms=0,termInstances=10,uses=0}
+INFO  - 2013-11-16 19:05:58.261; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=subject_geo_facet,memSize=4469,tindexSize=57,time=1,phase1=1,nTerms=20,bigTerms=0,termInstances=23,uses=0}
+INFO  - 2013-11-16 19:05:58.270; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=subject_topic_facet,memSize=4477,tindexSize=58,time=1,phase1=1,nTerms=45,bigTerms=0,termInstances=50,uses=0}
+INFO  - 2013-11-16 19:05:58.395; org.apache.solr.core.SolrCore; [blacklight-core] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=557 
+INFO  - 2013-11-16 19:05:58.395; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-11-16 19:05:58.395; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2013-11-16 19:05:58.404; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: author
+INFO  - 2013-11-16 19:05:58.422; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: subject
+INFO  - 2013-11-16 19:05:58.429; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: title
+INFO  - 2013-11-16 19:05:58.440; org.apache.solr.core.SolrCore; [blacklight-core] Registered new searcher Searcher@a0c73f main{StandardDirectoryReader(segments_3:5 _0(4.3.1):C30 _1(4.3.1):C1)}
+INFO  - 2013-11-16 19:07:23.312; org.apache.solr.core.SolrCore; [blacklight-core] webapp=/solr path=/select params={sort=timestamp+desc&q=&rows=100} hits=31 status=0 QTime=66 
+INFO  - 2013-11-16 19:09:02.515; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2013-11-16 19:09:02.550; org.apache.solr.update.processor.LogUpdateProcessor; [blacklight-core] webapp=/solr path=/update/csv params={} {} 0 37
+ERROR - 2013-11-16 19:09:02.551; org.apache.solr.common.SolrException; java.io.IOException: (line 89) invalid char between encapsulated token end delimiter
+	at org.apache.solr.internal.csv.CSVParser.encapsulatedTokenLexer(CSVParser.java:481)
+	at org.apache.solr.internal.csv.CSVParser.nextToken(CSVParser.java:359)
+	at org.apache.solr.internal.csv.CSVParser.getLine(CSVParser.java:231)
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:344)
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:31)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.RequestHandlers$LazyRequestHandlerWrapper.handleRequest(RequestHandlers.java:242)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1820)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:656)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:359)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:155)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+
+ERROR - 2013-11-16 19:09:02.553; org.apache.solr.common.SolrException; null:java.io.IOException: (line 89) invalid char between encapsulated token end delimiter
+	at org.apache.solr.internal.csv.CSVParser.encapsulatedTokenLexer(CSVParser.java:481)
+	at org.apache.solr.internal.csv.CSVParser.nextToken(CSVParser.java:359)
+	at org.apache.solr.internal.csv.CSVParser.getLine(CSVParser.java:231)
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:344)
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:31)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.RequestHandlers$LazyRequestHandlerWrapper.handleRequest(RequestHandlers.java:242)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1820)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:656)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:359)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:155)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+
+INFO  - 2013-11-16 19:12:05.375; org.apache.solr.update.processor.LogUpdateProcessor; [blacklight-core] webapp=/solr path=/update/csv params={} {} 0 7
+ERROR - 2013-11-16 19:12:05.376; org.apache.solr.common.SolrException; org.apache.solr.common.SolrException: undefined field: "cat"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1156)
+	at org.apache.solr.handler.loader.CSVLoaderBase.prepareFields(CSVLoaderBase.java:252)
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:348)
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:31)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.RequestHandlers$LazyRequestHandlerWrapper.handleRequest(RequestHandlers.java:242)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1820)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:656)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:359)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:155)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+
+INFO  - 2013-11-16 19:13:51.969; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits:num=1
+	commit{dir=/opt/solr/blacklight-core/data/index,segFN=segments_3,generation=3,filenames=[_1_Lucene41_0.doc, _0.fnm, _0_Lucene41_0.pos, _1_Lucene41_0.tim, _1_Lucene41_0.tip, _0.nvm, _1.fnm, _1.fdx, _1.fdt, _0_Lucene41_0.doc, _1.si, _0.nvd, _0.fdx, _0.si, _0_Lucene41_0.tim, segments_3, _0.fdt, _0_Lucene41_0.tip]
+INFO  - 2013-11-16 19:13:51.969; org.apache.solr.core.SolrDeletionPolicy; newest commit = 3[_1_Lucene41_0.doc, _0.fnm, _0_Lucene41_0.pos, _1_Lucene41_0.tim, _1_Lucene41_0.tip, _0.nvm, _1.fnm, _1.fdx, _1.fdt, _0_Lucene41_0.doc, _1.si, _0.nvd, _0.fdx, _0.si, _0_Lucene41_0.tim, segments_3, _0.fdt, _0_Lucene41_0.tip]
+INFO  - 2013-11-16 19:13:52.008; org.apache.solr.update.processor.LogUpdateProcessor; [blacklight-core] webapp=/solr path=/update/csv params={} {add=[0553573403, 0553579908, 055357342X, 0553293354, 0812521390, 0812550706, 0441385532, 0380014300, 0805080481, 080508049X]} 0 265
+INFO  - 2013-11-16 19:14:03.098; org.apache.solr.core.SolrCore; [blacklight-core] webapp=/solr path=/select params={sort=timestamp+desc&q=&rows=100} hits=31 status=0 QTime=11 
+INFO  - 2013-11-16 19:14:06.439; org.apache.solr.core.SolrCore; [blacklight-core] webapp=/solr path=/select params={sort=timestamp+desc&q=&rows=100} hits=31 status=0 QTime=5 
+INFO  - 2013-11-16 19:15:09.794; org.apache.solr.update.processor.LogUpdateProcessor; [blacklight-core] webapp=/solr path=/update params={commit=true/csv} {} 0 84
+ERROR - 2013-11-16 19:15:09.795; org.apache.solr.common.SolrException; org.apache.solr.common.SolrException: Unexpected character 'i' (code 105) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:175)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1820)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:656)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:359)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:155)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character 'i' (code 105) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:648)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2047)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1069)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:212)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	... 19 more
+
+INFO  - 2013-11-16 19:15:28.784; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2013-11-16 19:15:28.922; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=/opt/solr/blacklight-core/data/index,segFN=segments_3,generation=3,filenames=[_1_Lucene41_0.doc, _0.fnm, _0_Lucene41_0.pos, _1_Lucene41_0.tim, _1_Lucene41_0.tip, _0.nvm, _1.fnm, _1.fdx, _1.fdt, _0_Lucene41_0.doc, _1.si, _0.nvd, _0.fdx, _0.si, _0_Lucene41_0.tim, segments_3, _0.fdt, _0_Lucene41_0.tip]
+	commit{dir=/opt/solr/blacklight-core/data/index,segFN=segments_4,generation=4,filenames=[_2_Lucene41_0.pos, _2.si, _1_Lucene41_0.doc, _2_Lucene41_0.tim, _0_Lucene41_0.pos, _2_Lucene41_0.tip, _1.fnm, _0.nvd, _0.si, _2_1.del, _0_Lucene41_0.tim, _0_Lucene41_0.tip, _0.fnm, _1_Lucene41_0.tim, _2.fdt, _1_Lucene41_0.tip, _2_Lucene41_0.doc, _0.nvm, _2.fdx, _2.fnm, _1.fdx, _2.nvm, _0_Lucene41_0.doc, _1.fdt, _1.si, _2.nvd, _0.fdx, _0.fdt, segments_4]
+INFO  - 2013-11-16 19:15:28.923; org.apache.solr.core.SolrDeletionPolicy; newest commit = 4[_2_Lucene41_0.pos, _2.si, _1_Lucene41_0.doc, _2_Lucene41_0.tim, _0_Lucene41_0.pos, _2_Lucene41_0.tip, _1.fnm, _0.nvd, _0.si, _2_1.del, _0_Lucene41_0.tim, _0_Lucene41_0.tip, _0.fnm, _1_Lucene41_0.tim, _2.fdt, _1_Lucene41_0.tip, _2_Lucene41_0.doc, _0.nvm, _2.fdx, _2.fnm, _1.fdx, _2.nvm, _0_Lucene41_0.doc, _1.fdt, _1.si, _2.nvd, _0.fdx, _0.fdt, segments_4]
+INFO  - 2013-11-16 19:15:28.931; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1bc93a7 main
+INFO  - 2013-11-16 19:15:28.938; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@1bc93a7 main{StandardDirectoryReader(segments_4:7:nrt _0(4.3.1):C30 _1(4.3.1):C1 _2(4.3.1):C20/10)}
+INFO  - 2013-11-16 19:15:28.939; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2013-11-16 19:15:28.939; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Index is not optimized therefore skipping building spell check index for: default
+INFO  - 2013-11-16 19:15:28.939; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Index is not optimized therefore skipping building spell check index for: author
+INFO  - 2013-11-16 19:15:28.939; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Index is not optimized therefore skipping building spell check index for: subject
+INFO  - 2013-11-16 19:15:28.939; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Index is not optimized therefore skipping building spell check index for: title
+INFO  - 2013-11-16 19:15:28.942; org.apache.solr.core.SolrCore; [blacklight-core] Registered new searcher Searcher@1bc93a7 main{StandardDirectoryReader(segments_4:7:nrt _0(4.3.1):C30 _1(4.3.1):C1 _2(4.3.1):C20/10)}
+INFO  - 2013-11-16 19:15:28.943; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2013-11-16 19:15:28.943; org.apache.solr.update.processor.LogUpdateProcessor; [blacklight-core] webapp=/solr path=/update/csv params={commit=true} {add=[0553573403, 0553579908, 055357342X, 0553293354, 0812521390, 0812550706, 0441385532, 0380014300, 0805080481, 080508049X],commit=} 0 178
+INFO  - 2013-11-16 19:15:35.141; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=lc_1letter_facet,memSize=4805,tindexSize=76,time=1,phase1=1,nTerms=9,bigTerms=2,termInstances=16,uses=0}
+INFO  - 2013-11-16 19:15:35.143; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=lc_alpha_facet,memSize=4628,tindexSize=42,time=1,phase1=1,nTerms=14,bigTerms=1,termInstances=20,uses=0}
+INFO  - 2013-11-16 19:15:35.144; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=lc_b4cutter_facet,memSize=4544,tindexSize=52,time=1,phase1=1,nTerms=27,bigTerms=0,termInstances=28,uses=0}
+INFO  - 2013-11-16 19:15:35.145; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=language_facet,memSize=4637,tindexSize=46,time=0,phase1=0,nTerms=12,bigTerms=1,termInstances=25,uses=0}
+INFO  - 2013-11-16 19:15:35.146; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=pub_date,memSize=4536,tindexSize=44,time=0,phase1=0,nTerms=22,bigTerms=0,termInstances=30,uses=0}
+INFO  - 2013-11-16 19:15:35.148; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=subject_era_facet,memSize=4537,tindexSize=45,time=0,phase1=0,nTerms=6,bigTerms=0,termInstances=10,uses=0}
+INFO  - 2013-11-16 19:15:35.152; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=subject_geo_facet,memSize=4549,tindexSize=57,time=1,phase1=1,nTerms=20,bigTerms=0,termInstances=23,uses=0}
+INFO  - 2013-11-16 19:15:35.158; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=subject_topic_facet,memSize=4557,tindexSize=58,time=1,phase1=1,nTerms=45,bigTerms=0,termInstances=50,uses=0}
+INFO  - 2013-11-16 19:15:35.159; org.apache.solr.core.SolrCore; [blacklight-core] webapp=/solr path=/select params={sort=timestamp+desc&q=&rows=100} hits=41 status=0 QTime=35 
+INFO  - 2013-11-16 19:30:49.654; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=27378735
+INFO  - 2013-11-16 19:30:49.686; org.apache.solr.core.SolrCore; [blacklight-core]  CLOSING SolrCore org.apache.solr.core.SolrCore@1d9e5ad
+INFO  - 2013-11-16 19:30:49.691; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=1,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=20,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-11-16 19:30:49.692; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-11-16 19:30:49.692; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-11-16 19:30:49.692; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-11-16 19:30:49.695; org.apache.solr.core.SolrCore; [blacklight-core] Closing main searcher on request.
+INFO  - 2013-11-16 19:30:49.699; org.apache.solr.core.CachingDirectoryFactory; Closing StandardDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-11-16 19:30:49.700; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/blacklight-core/data [CachedDir<<refCount=0;path=/opt/solr/blacklight-core/data;done=false>>]
+INFO  - 2013-11-16 19:30:49.700; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/blacklight-core/data
+INFO  - 2013-11-16 19:30:49.700; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/blacklight-core/data/index [CachedDir<<refCount=0;path=/opt/solr/blacklight-core/data/index;done=false>>]
+INFO  - 2013-11-16 19:30:49.701; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/blacklight-core/data/index
+INFO  - 2013-11-16 19:30:49.701; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@1849daf
+INFO  - 2013-11-16 19:30:49.708; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-11-16 19:30:49.708; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-11-16 19:30:49.708; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-11-16 19:30:49.709; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-11-16 19:30:49.709; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2013-11-16 19:30:49.709; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-11-16 19:30:49.709; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/collection1/data [CachedDir<<refCount=0;path=/opt/solr/collection1/data;done=false>>]
+INFO  - 2013-11-16 19:30:49.710; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/collection1/data
+INFO  - 2013-11-16 19:30:49.710; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/collection1/data/index [CachedDir<<refCount=0;path=/opt/solr/collection1/data/index;done=false>>]
+INFO  - 2013-11-16 19:30:49.710; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/collection1/data/index

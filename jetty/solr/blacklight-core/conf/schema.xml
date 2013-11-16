@@ -45,7 +45,7 @@
     that avoids logging every request
 -->
 
-<schema name="Blacklight Demo Index" version="1.5">
+<schema name="Blacklight Igal Index" version="1.5">
   <!-- attribute "name" is the name of this schema and is only used for display purposes.
        Applications should change this to reflect the nature of the search collection.
        version="1.4" is Solr's version number for the schema syntax and semantics.  It should
@@ -544,6 +544,26 @@
    <!-- format is used for facet, display, and choosing which partial to use for the show view, so it must be stored and indexed -->
    <field name="format" type="string" indexed="true" stored="true"/>
 
+
+  <!--IGAL FIELDS-->
+  <field name="category" type="string" indexed="true" stored="true" multiValued="false" />
+  <field name="description" type="text_general" indexed="true" stored="true" multiValued="false" />
+  <field name="title" type="string" indexed="true" stored="true" multiValued="false" />
+  <field name="topic" type="string" indexed="true" stored="true" multiValued="false" />
+  <field name="prod_type" type="string" indexed="true" stored="true" multiValued="false" />
+  <field name="url" type="string" indexed="true" stored="true" multiValued="false" />
+  <field name="image" type="string" indexed="true" stored="true" multiValued="false" />
+  <field name="img_thumb" type="string" indexed="true" stored="true" multiValued="false" />
+  <field name="sale_price" type="float" indexed="true" stored="true" multiValued="false" />
+  <field name="price" type="float" indexed="true" stored="true" multiValued="false" />
+  <field name="uniq_id" type="string" indexed="true" stored="true" multiValued="false" />
+  
+  
+  
+  
+  
+  <!--END IGAL FIELDS -->
+  
    
 
    <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
@@ -658,6 +678,19 @@
    <copyField source="subject_topic_facet" dest="opensearch_display"/>
    <copyField source="subject_t" dest="opensearch_display"/>
    <copyField source="subject_addl_t" dest="opensearch_display"/>  
+   
+   <!-- IGAL Copy Fields -->
+   <copyField source="category" dest="text" />
+   <copyField source="description" dest="text" />
+   <copyField source="title" dest="text" />
+   <copyField source="topic" dest="text" />
+   <copyField source="prod_type" dest="text" />
+   <copyField source="url" dest="text" />
+   <copyField source="image" dest="text" />
+   <copyField source="img_thumb" dest="text" />
+   <copyField source="sale_price" dest="text" />
+   <copyField source="price" dest="text" />
+   <copyField source="uniq_id" dest="text" />
 
 
    <!-- Above, multiple source fields are copied to the [text] field. 
