@@ -94,11 +94,12 @@ class CatalogController < ApplicationController
     #config.add_index_field 'published_display', :label => 'Published:'
     #config.add_index_field 'published_vern_display', :label => 'Published:'
     #config.add_index_field 'lc_callnum_display', :label => 'Call number:'
-    config.add_index_field 'title', :label => 'Title:' 
-    config.add_index_field 'category', :label => 'Category:' 
+    config.add_index_field 'title', :label => 'Title:', :highlight => true 
+    config.add_index_field 'price', :label => 'price:' 
+    config.add_index_field 'category', :label => 'Category:'
     config.add_index_field 'topic', :label => 'Topic:' 
     config.add_index_field 'prod_type', :label => 'Product Type:' 
-    config.add_index_field 'description', :label => 'Full Details:' 
+    
     
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
@@ -116,10 +117,12 @@ class CatalogController < ApplicationController
     #config.add_show_field 'published_vern_display', :label => 'Published:'
     #config.add_show_field 'lc_callnum_display', :label => 'Call number:'
     #config.add_show_field 'isbn_t', :label => 'ISBN:'
-    #config.add_index_field 'title', :label => 'Title:' 
-    #config.add_index_field 'category', :label => 'Category:' 
-    #config.add_index_field 'topic', :label => 'Topic:' 
-    #config.add_index_field 'prod_type', :label => 'Product Type:' 
+    config.add_show_field 'title', :label => 'Title:', :highlight => true 
+    config.add_show_field 'price', :label => 'Price:' 
+    config.add_show_field 'category', :label => 'Category:' 
+    config.add_show_field 'topic', :label => 'Topic:' 
+    config.add_show_field 'prod_type', :label => 'Product Type:' 
+    config.add_show_field 'description', :label => 'Full Details:'
     
 
     # "fielded" search configuration. Used by pulldown among other places.
@@ -156,30 +159,35 @@ class CatalogController < ApplicationController
       # Solr parameter de-referencing like $title_qf.
       # See: http://wiki.apache.org/solr/LocalParams
       field.solr_local_parameters = { 
-        :qf => '$title_qf',
-        :pf => '$title_pf'
+        #:qf => '$title_qf',
+        #:pf => '$title_pf'
+        
+        :qf => '$title',
+        :pf => '$title'
       }
     end
     
-    config.add_search_field('author') do |field|
-      field.solr_parameters = { :'spellcheck.dictionary' => 'author' }
-      field.solr_local_parameters = { 
-        :qf => '$author_qf',
-        :pf => '$author_pf'
-      }
-    end
+    #THIS IS THE DEFAULT BEHAVIOR, BUT WE ARE NOT USING THESE FIELDS
+    #config.add_search_field('author') do |field|
+    #  field.solr_parameters = { :'spellcheck.dictionary' => 'author' }
+    #  field.solr_local_parameters = { 
+    #    :qf => '$author_qf',
+    #    :pf => '$author_pf'
+    #  }
+    #end
+    
     
     # Specifying a :qt only to show it's possible, and so our internal automated
     # tests can test it. In this case it's the same as 
     # config[:default_solr_parameters][:qt], so isn't actually neccesary. 
-    config.add_search_field('subject') do |field|
-      field.solr_parameters = { :'spellcheck.dictionary' => 'subject' }
-      field.qt = 'search'
-      field.solr_local_parameters = { 
-        :qf => '$subject_qf',
-        :pf => '$subject_pf'
-      }
-    end
+    #config.add_search_field('subject') do |field|
+    #  field.solr_parameters = { :'spellcheck.dictionary' => 'subject' }
+    #  field.qt = 'search'
+    #  field.solr_local_parameters = { 
+    #    :qf => '$subject_qf',
+    #    :pf => '$subject_pf'
+    #  }
+    #end
 
     # "sort results by" select (pulldown)
     # label in pulldown is followed by the name of the SOLR field to sort by and
