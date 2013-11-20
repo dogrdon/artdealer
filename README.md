@@ -1,4 +1,4 @@
 ###Artdealer
-Blacklight app for an artdealers collection.
+Blacklight app for searching an artdealers collection.
 
 [underconstruction.gif]
