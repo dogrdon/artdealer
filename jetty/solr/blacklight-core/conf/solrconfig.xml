@@ -635,6 +635,12 @@
 	   <!--<str name="hl.simple.pre"><em></str>
 	   <str name="hl.simple.post"></em></str>-->
 	   
+	   <str name="mlt">true</str>
+	   <str name="mlt.fl">description</str>
+	   <int name="mlt.count">5</int>
+	   
+	   <!-- IGAL MOD: add more like this -->
+	   
 
        <!-- this qf and pf are used by default, if not otherwise specified by
             client. The default blacklight_config will use these for the
