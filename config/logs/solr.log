@@ -783,3 +783,26 @@ INFO  - 2013-11-20 04:07:04.052; org.apache.solr.core.SolrCore; [blacklight-core
 INFO  - 2013-11-20 04:07:04.064; org.apache.solr.core.SolrCore; [blacklight-core] webapp=/solr path=/select params={facet=false&fl=*&sort=score+desc,+title+asc&start=8&facet.query=pub_date:[2008+TO+*]&facet.query=pub_date:[2003+TO+*]&facet.query=pub_date:[1988+TO+*]&facet.field=price&facet.field=prod_type&facet.field=category&facet.field=topic&qt=search&wt=ruby&facet.pivot=format,language_facet&fq=price:250.0&rows=3} hits=23 status=0 QTime=7 
 INFO  - 2013-11-20 04:08:33.052; org.apache.solr.core.SolrCore; [blacklight-core] webapp=/solr path=/select params={id=5&qt=document&wt=ruby} hits=1 status=0 QTime=0 
 INFO  - 2013-11-20 04:08:33.066; org.apache.solr.core.SolrCore; [blacklight-core] webapp=/solr path=/select params={facet=false&fl=*&sort=score+desc,+title+asc&start=8&facet.query=pub_date:[2008+TO+*]&facet.query=pub_date:[2003+TO+*]&facet.query=pub_date:[1988+TO+*]&facet.field=price&facet.field=prod_type&facet.field=category&facet.field=topic&qt=search&wt=ruby&facet.pivot=format,language_facet&fq=price:250.0&rows=3} hits=23 status=0 QTime=7 
+INFO  - 2013-11-22 01:20:06.183; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=19309212
+INFO  - 2013-11-22 01:20:06.195; org.apache.solr.core.SolrCore; [blacklight-core]  CLOSING SolrCore org.apache.solr.core.SolrCore@a30fd
+INFO  - 2013-11-22 01:20:06.200; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-11-22 01:20:06.201; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-11-22 01:20:06.201; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-11-22 01:20:06.201; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-11-22 01:20:06.202; org.apache.solr.core.SolrCore; [blacklight-core] Closing main searcher on request.
+INFO  - 2013-11-22 01:20:06.202; org.apache.solr.core.CachingDirectoryFactory; Closing StandardDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-11-22 01:20:06.203; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/blacklight-core/data/index [CachedDir<<refCount=0;path=/opt/solr/blacklight-core/data/index;done=false>>]
+INFO  - 2013-11-22 01:20:06.203; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/blacklight-core/data/index
+INFO  - 2013-11-22 01:20:06.204; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/blacklight-core/data [CachedDir<<refCount=0;path=/opt/solr/blacklight-core/data;done=false>>]
+INFO  - 2013-11-22 01:20:06.204; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/blacklight-core/data
+INFO  - 2013-11-22 01:20:06.205; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@13bc30a
+INFO  - 2013-11-22 01:20:06.210; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0}
+INFO  - 2013-11-22 01:20:06.210; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2013-11-22 01:20:06.210; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2013-11-22 01:20:06.210; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2013-11-22 01:20:06.211; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2013-11-22 01:20:06.211; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2013-11-22 01:20:06.211; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/collection1/data/index [CachedDir<<refCount=0;path=/opt/solr/collection1/data/index;done=false>>]
+INFO  - 2013-11-22 01:20:06.211; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/collection1/data/index
+INFO  - 2013-11-22 01:20:06.212; org.apache.solr.core.CachingDirectoryFactory; looking to close /opt/solr/collection1/data [CachedDir<<refCount=0;path=/opt/solr/collection1/data;done=false>>]
+INFO  - 2013-11-22 01:20:06.212; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /opt/solr/collection1/data
