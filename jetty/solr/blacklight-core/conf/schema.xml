@@ -554,8 +554,8 @@
   <field name="url" type="string" indexed="true" stored="true" multiValued="false" />
   <field name="image" type="string" indexed="true" stored="true" multiValued="false" />
   <field name="img_thumb" type="string" indexed="true" stored="true" multiValued="false" />
-  <field name="sale_price" type="float" indexed="true" stored="true" multiValued="false" />
-  <field name="price" type="float" indexed="true" stored="true" multiValued="false" />
+  <field name="sale_price" type="int" indexed="true" stored="true" multiValued="false" />
+  <field name="price" type="int" indexed="true" stored="true" multiValued="false" />
   <field name="uniq_id" type="string" indexed="true" stored="true" multiValued="false" />
   
   
@@ -688,8 +688,6 @@
    <copyField source="url" dest="text" />
    <copyField source="image" dest="text" />
    <copyField source="img_thumb" dest="text" />
-   <copyField source="sale_price" dest="text" />
-   <copyField source="price" dest="text" />
    <copyField source="uniq_id" dest="text" />
 
 

@@ -1,6 +1,6 @@
 
 #DELETE INDEX FULLY (FROM BROWSER)
-curl http://localhost:8080/solr/core/update?stream.body=<delete><query>*:*</query></delete>
+curl http://localhost:8080/solr/{coreName}/update?stream.body=<delete><query>*:*</query></delete>
 
 #REINDEX DATA (REPLACE .CSV FILE NAME TO YOURS)
 curl http://localhost:8080/solr/update/csv?commit=true --data-binary @igal_qui.csv -H 'Content-type:text/plain; charset=utf-8'

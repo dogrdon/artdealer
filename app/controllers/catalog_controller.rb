@@ -95,7 +95,7 @@ class CatalogController < ApplicationController
     #config.add_index_field 'published_vern_display', :label => 'Published:'
     #config.add_index_field 'lc_callnum_display', :label => 'Call number:'
     #config.add_index_field 'title', :label => 'Title:'
-    config.add_index_field 'price', :label => 'Price:' #, :helper_method => :price_to_currency
+    config.add_index_field 'price', :label => 'Price:', :helper_method => :price_to_currency
     config.add_index_field 'category', :label => 'Category:'
     config.add_index_field 'topic', :label => 'Topic:' 
     config.add_index_field 'prod_type', :label => 'Product Type:' 
@@ -118,7 +118,7 @@ class CatalogController < ApplicationController
     #config.add_show_field 'lc_callnum_display', :label => 'Call number:'
     #config.add_show_field 'isbn_t', :label => 'ISBN:'
     config.add_show_field 'image'
-    config.add_show_field 'price', :label => 'Price:' #, :helper_method => :price_to_currency
+    config.add_show_field 'price', :label => 'Price:', :helper_method => :price_to_currency
     config.add_show_field 'category', :label => 'Category:' 
     config.add_show_field 'topic', :label => 'Topic:' 
     config.add_show_field 'prod_type', :label => 'Product Type:' 
