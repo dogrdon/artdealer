@@ -7,7 +7,7 @@
 	<% if should_render_show_field? document, field %>
 	    <%# IGAL MOD add image to default individual doc show -%>
 		<% if solr_fname=='image'%>
-			<img src=<%= render_document_show_field_value document, :field => solr_fname %> > </img> <br>
+			<img class="doc_img" src=<%= render_document_show_field_value document, :field => solr_fname %> > </img> <br>
 		<% else %>
 	        <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_label document, :field => solr_fname %></dt>
 	        <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_value document, :field => solr_fname %></dd>
