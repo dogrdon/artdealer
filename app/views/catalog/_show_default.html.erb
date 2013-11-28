@@ -8,6 +8,10 @@
 	    <%# IGAL MOD add image to default individual doc show -%>
 		<% if solr_fname=='image'%>
 			<img class="doc_img" src=<%= render_document_show_field_value document, :field => solr_fname %> > </img> <br>
+			
+		<% elsif solr_fname=='url'%>
+			<a class="buy_me" href=<%= render_document_show_field_value document, :field => solr_fname %> > Click to Buy! </a> <br>
+			
 		<% else %>
 	        <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_label document, :field => solr_fname %></dt>
 	        <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_value document, :field => solr_fname %></dd>
