@@ -1,16 +1,31 @@
 <%# default partial to display solr document fields in catalog show view -%>
+<div class="doc_image_block">
+    <% document_show_fields(document).each do |solr_fname, field| -%>
+  
+	
+  	<% if should_render_show_field? document, field %>
+  	    <%# IGAL MOD add image to default individual doc show -%>
+  		<% if solr_fname=='image'%>
+			
+  			<img class="doc_img" src=<%= render_document_show_field_value document, :field => solr_fname %> > </img>
+		<% else %>
+		<% end -%>
+   	<% end -%>
+    <% end -%>
+
+</div>	
+
+<div class="doc_details_block">
 <dl class="dl-horizontal  dl-invert">
   <% document_show_fields(document).each do |solr_fname, field| -%>
   
-   
 	
 	<% if should_render_show_field? document, field %>
 	    <%# IGAL MOD add image to default individual doc show -%>
-		<% if solr_fname=='image'%>
-			<img class="doc_img" src=<%= render_document_show_field_value document, :field => solr_fname %> > </img> <br>
+		
 			
-		<% elsif solr_fname=='url'%>
-			<a class="buy_me" href=<%= render_document_show_field_value document, :field => solr_fname %> > Click to Buy! </a> <br>
+		<% if solr_fname=='url'%>
+			<a class="buy_me btn btn-primary btn-lg" href=<%= render_document_show_field_value document, :field => solr_fname %> > Click to Buy! </a> <br>
 			
 		<% else %>
 	        <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_document_show_field_label document, :field => solr_fname %></dt>
@@ -19,3 +34,4 @@
 	<% end -%>
   <% end -%>
 </dl>
+</div>
