@@ -63,7 +63,7 @@ class CatalogController < ApplicationController
     #config.add_facet_field 'lc_1letter_facet', :label => 'Call Number' 
     #config.add_facet_field 'subject_geo_facet', :label => 'Region' 
     #config.add_facet_field 'subject_era_facet', :label => 'Era' 
-    config.add_facet_field 'price', :label => 'Price'#, :helper_method => :price_to_currency
+    config.add_facet_field 'price', :label => 'Price'#, :helper_method => :price_to_currency_facet
     config.add_facet_field 'prod_type', :label => 'Product Type'
     config.add_facet_field 'category', :label => 'Product Category'
     config.add_facet_field 'topic', :label => 'Topic' 
