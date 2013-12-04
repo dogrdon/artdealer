@@ -82,6 +82,8 @@ class CatalogController < ApplicationController
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
     config.add_facet_fields_to_solr_request!
+    # -- add configuration for highlighting?
+    #config.add_field_configuration_to_solr_request!
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
@@ -97,7 +99,7 @@ class CatalogController < ApplicationController
     #config.add_index_field 'title', :label => 'Title:'
     config.add_index_field 'price', :label => 'Price:', :helper_method => :price_to_currency
     config.add_index_field 'category', :label => 'Category:'
-    config.add_index_field 'topic', :label => 'Topic:' 
+    config.add_index_field 'topic', :label => 'Topic:', :link_to_search => true
     config.add_index_field 'prod_type', :label => 'Product Type:' 
     
     
@@ -122,11 +124,13 @@ class CatalogController < ApplicationController
     config.add_show_field 'category', :label => 'Category:' 
     config.add_show_field 'topic', :label => 'Topic:' 
     config.add_show_field 'prod_type', :label => 'Product Type:' 
-    config.add_show_field 'description', :label => 'Full Details:'
+    config.add_show_field 'description', :label => 'Full Details:' 
     config.add_show_field 'url', :label => 'Buy Now:'
     
     #IGAL MOD - add thumbnails
     config.index.thumbnail_field = 'img_thumb'
+    
+    
     
 
     # "fielded" search configuration. Used by pulldown among other places.
